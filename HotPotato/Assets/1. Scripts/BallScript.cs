@@ -54,7 +54,7 @@ public class BallScript: MonoBehaviour
     /// </summary>
     private void CheckCatch()
     {
-        float squareDistance = (NextTarget.localPosition - transform.localPosition).sqrMagnitude;
+        float squareDistance = (NextTarget.position - transform.localPosition).sqrMagnitude;
         if (squareDistance <= SqrCatchDistance)
         {
             // catch
